@@ -7,11 +7,15 @@ $(document).ready(function(){
     var selectRow = selectClasses.pop();
     var selectCol = selectClasses.pop();
 
-    $("." + selectRightDiagonal).children(".queen").fadeOut();
-    $("." + selectLeftDiagonal).children(".queen").fadeOut();
-    $("." + selectRow).children(".queen").fadeOut();
-    $("." + selectCol).children(".queen").fadeOut();
-    $(this).children(".queen").fadeIn();
+    $("." + selectRightDiagonal).children(".queen").removeClass("active").fadeOut();
+    $("." + selectLeftDiagonal).children(".queen").removeClass("active").fadeOut();
+    $("." + selectRow).children(".queen").removeClass("active").fadeOut();
+    $("." + selectCol).children(".queen").removeClass("active").fadeOut();
+    $(this).children(".queen").addClass("active").fadeIn();
+
+    if ( $(".active").length === 8 ) {
+      $(".winner-message").show();
+    }
 
   })
 });
