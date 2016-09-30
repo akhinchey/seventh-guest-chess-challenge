@@ -77,3 +77,14 @@ body {
   color: green;
   display: none;
 }
+
+.logo {
+  width: 150px;
+  display: inline;
+  vertical-align: middle;
+}
+
+.title {
+  display: inline;
+  vertical-align: middle;
+}
