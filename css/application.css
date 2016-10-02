@@ -59,6 +59,7 @@ body {
 
 .queen {
   height: 80px;
+  vertical-align: middle;
   padding: 10px;
   margin: auto;
   display: none;
@@ -74,6 +75,7 @@ body {
 
 .winner-message {
   font-size: 1.65em;
+  padding: 0;
   color: green;
   display: none;
 }
